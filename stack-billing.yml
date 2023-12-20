@@ -38,7 +38,7 @@ services:
     depends_on:
       - postgres_db
     ports:
-      - 8070:8080
+      - 8080:8080
 
   billing-front:
     build:

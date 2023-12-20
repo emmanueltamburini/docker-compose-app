@@ -445,8 +445,10 @@ Docker:
 - docker tag [name] [new-name]: tag a docker image
 - docker inspect [name]: check container
 - docker volume prune: delete every volumen
+- docker exec -it [name] sh
 
 Docker-Compose:
+
 - docker compose -f [file] up -d: up a docker compose file
 - docker compose -f [file] down: down a docker compose file
 - docker compose -f [file] build: build every dependency to a docker compose file
