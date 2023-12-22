@@ -6,7 +6,7 @@ services:
     image: postgres:latest
     restart: always
     ports:
-      - 5434:5432
+      - 5432:5432
     environment:
       POSTGRES_PASSWORD: qwerty
       POSTGRES_USER: postgres
@@ -48,3 +48,11 @@ services:
       - billing-back
     ports:
       - 90:80
+    deploy: 
+      resources: 
+        limits:
+          cpus: "0.15"
+          memory: 250M
+        reservations:
+          cpus: "0.1"
+          memory: 128M
